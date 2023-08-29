@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #080c24;
+    color: #ededed;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0.7)), url(images/BG/bg-img.png);
+    background-position: center;
+    background-size: cover;
+    position: relative
+
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.navbar{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    display: inline-block;
+    
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: #5215fc;
+}
+
+
+/*------------ Home ------------*/
+
+.home{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;   
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: #5215fc;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.home-image{
+    max-width: 600px;
+    position: relative;
+
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: #5215fc;
+    border: 2px solid #5215fc;
+    border-radius:  8px;
+    font-size: 19px;
+    color: #12043e;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn-box a:hover{
+    color: #5215fc;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #5215fc;
+}
+
+.btn-box a:nth-child(2):hover{
+    color: #12043e;
+}
+
+
+.btn-box a:nth-child(2)::before{
+    background: #5215fc;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #12043e;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #5215fc;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #5215fc;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #5215fc;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.home-sci a:hover{
+    color: #12043e; 
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+/*------------ Experience ------------*/
+
+.experience{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.experience h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #ededed;
+    text-align: left;
+    padding-bottom: 20px;
+
+}
+
+.card-body img{
+    width: 80%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*------------ Education ------------*/
+
+.education{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.education h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #ededed;
+    text-align: left;
+    padding-bottom: 20px;
+
+}
+
+
+.education h3{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+}
+
+p{
+    color: #ededed;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+}
+
+.education-col{
+    flex-basis: 40%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    bottom: 0;
+}
+
+.education-col img{
+    height: 50px;
+}
+
+/*------------ Publications ------------*/
+
+.publications{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 20px;
+    
+}
+
+.publications h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #ededed;
+    text-align: left;
+
+}
+
+.timeline{
+    width:100%;
+    color:#fff;
+    padding:30px 20px;
+    
+  }
+
+  .timeline ul{
+    list-style-type:none;
+    border-left:2px solid #5215fc;
+    padding:10px 5px;
+  }
+  .timeline ul li{
+    padding:20px 20px;
+    position:relative;
+    cursor:pointer;
+    transition:.5s;
+  }
+  .timeline ul li span{
+    display:inline-block;
+    background-color: #5215fc;
+    border-radius:25px;
+    padding:2px 5px;
+    font-size:15px;
+    text-align:center;
+  }
+  .timeline ul li .content h3{
+    color:#b900f3;
+    font-size:17px;
+    padding:2px 5px;
+  }
+
+  .timeline ul li .content p{
+    padding:5px 0px 15px 0px;
+    font-size:15px;
+  }
+  .timeline ul li:before{
+	position:absolute;
+	content:'';
+	width:10px;
+	height:10px;
+	background-color:#b900f3;
+	border-radius:50%;
+	left:-11px;
+	top:28px;
+	transition:.5s;
+}
+
+/*------------ Bottons of Publications ------------*/
+
+.showpub-sci{
+    position: relative;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showpub-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #5215fc;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #5215fc;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.showpub-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #5215fc;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.showpub-sci a:hover{
+    color: #12043e; 
+}
+
+.showpub-sci a:hover::before{
+    width: 100%;
+}
