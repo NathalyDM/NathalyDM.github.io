@@ -22,6 +22,17 @@ body {
 
 }
 
+.header-templates{
+    min-height: 2vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative
+
+}
+
+
+
 .logo{
     font-size: 25px;
     color: #ededed;
@@ -391,5 +402,57 @@ p{
 }
 
 .showpub-sci a:hover::before{
+    width: 100%;
+}
+
+
+/*------------ Bottons of Publications ------------*/
+
+.download-sci{
+    position: relative;
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+.download-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #5215fc;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #5215fc;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    
+}
+
+.download-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #5215fc;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.download-sci a:hover{
+    color: #12043e; 
+}
+
+.download-sci a:hover::before{
     width: 100%;
 }
