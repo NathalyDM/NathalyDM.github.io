@@ -14,41 +14,43 @@
     <body>
         <header class="header">
             
-
-            <nav class="navbar">
+            <nav>
                 <a href="index.html" class="logo">@nate.genetics</a>
-                <a href="index.html#home">Home</a>
-                <a href="index.html#experience">Experience</a>
-                <a href="index.html#education">Education</a>
-                <a href="index.html#publications">Publications</a>
-                <a href="presentations.html">Templates</a>
-
-                <!------------ <a href="#">Initiatives</a> 
-                    <a href="#">Contact</a>
-                    ------------> 
-                 
+                <div class="nav-links" id="navLinks">
+                    <i class='bx bx-menu' onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#experience">Experience</a></li>
+                        <li><a href="index.html#education">Education</a></li>
+                        <li><a href="index.html#publications">Publications</a></li>
+                        <li><a href="presentations.html">Templates</a></li>
+                    </ul>
+    
+                </div>
+                <i class='bx bx-menu' onclick="showMenu()"></i>
+                
             </nav>
 
         <!------------ Home ------------> 
         <section class="home" id="home">
             <div class="home-content">
                 <h1>Hi, I'm Nathaly Dongo</h1>
-                <h3>MSc. Biotechnology BEng. Bioengineering</h3>
+                <h3>BEng. Bioengineering</h3>
                 <p>AI Research Engineer in biological sciences. I have worked on neuroscience and oncology projects 
                     in interdisciplinary teams. With experience in artificial intelligence, multi-omics analysis, 
                     image processing, software development, database management, and deep learning applied for the 
                     clustering and behavior prediction of biological systems.
                 </p>
                 <div class="btn-box">
-                    <a href="mailto: nathadome@gmail.com">My CV</a>
-                    <a href="mailto: nathadome@gmail.com">Let's chat!</a>
+                    <a href="https://www.linkedin.com/in/nathaly-dongo-mendoza/">My CV</a>
+                    <a href="https://www.linkedin.com/in/nathaly-dongo-mendoza/">Let's chat!</a>
                 </div>
             </div>
             
             <div class="home-sci">
                 <a href="https://www.linkedin.com/in/nathaly-dongo-mendoza/" target="_blank"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/NathalyDM" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a href="https://twitter.com/DongoMendoza" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://instagram.com/genetifics?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class='bx bxl-instagram' ></i></i></a>
             </div>
         </section>
 
@@ -227,6 +229,17 @@
             </div>
         </section>
 
+    <!------------ Javascript for Toggle Menu ------------> 
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
 
     </body>
 

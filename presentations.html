@@ -14,16 +14,24 @@
     
     <body>
         <header class="header-templates">
-            <nav class="navbar">
+            <nav>
                 <a href="index.html" class="logo">@nate.genetics</a>
-                <a href="index.html#home">Home</a>
-                <a href="index.html#experience">Experience</a>
-                <a href="index.html#education">Education</a>
-                <a href="index.html#publications">Publications</a>
-                <a href="presentations.html">Templates</a>
-
+                <div class="nav-links" id="navLinks">
+                    <i class='bx bx-menu' onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#experience">Experience</a></li>
+                        <li><a href="index.html#education">Education</a></li>
+                        <li><a href="index.html#publications">Publications</a></li>
+                        <li><a href="presentations.html">Templates</a></li>
+                    </ul>
+    
+                </div>
+                <i class='bx bx-menu' onclick="showMenu()"></i>
+                
             </nav>
         </header>
+
 
         <!------------ Powerpoints templates ------------>
         <section class="experience" id="experience">
@@ -51,7 +59,19 @@
 
 
             </div>
-        </section>       
+        </section>      
+
+    <!------------ Javascript for Toggle Menu ------------> 
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
 
     </body>
 
